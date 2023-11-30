@@ -16,17 +16,17 @@ Mata Kuliah : PBKK A -->
             padding: 20px;
         }
 
-        .bagian{
+        .flex-container {
             display: flex;
             flex-direction: row;
             align-items: center;
         }
 
-        .register{
+        .registration-section {
             margin-left: 100px;
         }
 
-        .container {
+        .custom-container {
             max-width: 600px;
             margin-top: 30px;
             background-color: #fff;
@@ -35,7 +35,7 @@ Mata Kuliah : PBKK A -->
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        header {
+        .custom-header {
             font-size: 24px;
             color: #333;
             padding-bottom: 10px;
@@ -44,22 +44,22 @@ Mata Kuliah : PBKK A -->
             text-align: center;
         }
 
-        .form-wrapper {
+        .form-container {
             padding: 20px;
         }
 
-        .form-group {
+        .form-group-container {
             margin-bottom: 10px;
         }
 
-        .form-group label {
+        .form-group-container label {
             display: block;
             color: #666;
             margin-bottom: 5px;
         }
 
-        .form-group input[type="text"],
-        .form-group input[type="date"] {
+        .form-group-container input[type="text"],
+        .form-group-container input[type="date"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -67,7 +67,7 @@ Mata Kuliah : PBKK A -->
             border-radius: 4px;
         }
 
-        button {
+        .submit-button {
             background-color: #007bff;
             color: white;
             padding: 10px 15px;
@@ -78,7 +78,7 @@ Mata Kuliah : PBKK A -->
             width: 100%;
         }
 
-        button:hover {
+        .submit-button:hover {
             background-color: #0056b3;
         }
     </style>
@@ -118,33 +118,33 @@ Mata Kuliah : PBKK A -->
     </nav>
 
     <h1 style="margin-top: 20px">Pendaftaran Tahun Ajaran 2021/2022</h1>
-    <div class="bagian">
-        <div class="register">
+    <div class="flex-container">
+        <div class="registration-section">
             <img src="/register.png" alt="Logo Navbar" style="height: 500px; width: auto;">
         </div>
-        <div class="container">
-            <header>Pendaftaran Tahun Ajaran 2021/2022</header>
-            <div class="form-wrapper">
+        <div class="custom-container">
+            <header class="custom-header">Pendaftaran Tahun Ajaran 2021/2022</header>
+            <div class="form-container">
                 <form>
-                    <div class="form-group">
+                    <div class="form-group-container">
                         <label for="nisn">NISN</label>
                         <input type="text" id="nisn" name="nisn">
                     </div>
-                    <div class="form-group">
-                        <label for="namaLengkap">Nama Lengkap</label>
-                        <input type="text" id="namaLengkap" name="namaLengkap">
-                        <label for="namaPanggilan">Nama Panggilan</label>
-                        <input type="text" id="namaPanggilan" name="namaPanggilan">
+                    <div class="form-group-container">
+                        <label for="fullName">Nama Lengkap</label>
+                        <input type="text" id="fullName" name="fullName">
+                        <label for="nickname">Nama Panggilan</label>
+                        <input type="text" id="nickname" name="nickname">
                     </div>
-                    <div class="form-group">
-                        <label for="tempatLahir">Tempat Lahir</label>
-                        <input type="text" id="tempatLahir" name="tempatLahir">
+                    <div class="form-group-container">
+                        <label for="placeOfBirth">Tempat Lahir</label>
+                        <input type="text" id="placeOfBirth" name="placeOfBirth">
                     </div>
-                    <div class="form-group">
-                        <label for="tanggalLahir">Tanggal Lahir</label>
-                        <input type="date" id="tanggalLahir" name="tanggalLahir">
+                    <div class="form-group-container">
+                        <label for="dateOfBirth">Tanggal Lahir</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth">
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </form>
             </div>
         </div>
